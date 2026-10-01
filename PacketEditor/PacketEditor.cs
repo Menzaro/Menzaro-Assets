@@ -529,7 +529,7 @@ sealed class Editor
     static bool ApplyHex(byte[] payload, string args)
     {
         string[] parts = args.Trim().Split(
-            new[] { ' ', '\\t' }, 2,
+            new[] { ' ', '\t' }, 2,
             StringSplitOptions.RemoveEmptyEntries);
 
         if (parts.Length != 2) return false;
@@ -561,7 +561,7 @@ sealed class Editor
     static bool ApplyText(byte[] payload, string args)
     {
         string[] parts = args.Trim().Split(
-            new[] { ' ', '\\t' }, 2,
+            new[] { ' ', '\t' }, 2,
             StringSplitOptions.RemoveEmptyEntries);
 
         if (parts.Length != 2) return false;
